@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="bstyles.css">
+<title>The experiment 653</title>
+</head>
+<body>
+<a href="index.html">back to home page</a>
+<h1>fair warning!<h1>
+<h2>this is my first time doing Javascript, so this may be weird!</h2>
+<button onclick="document.getElementById('yes').src='img/happy.png'">Make blocky happy</button>
+<img id="yes" src="img/happy.png" width="200" height="200">
+<button onclick="document.getElementById('yes').src='img/sad.png'">Make blocky sad</button>
+<p id= "j">It's rumored that some pages are stranger than other pages</p>
+<button type="button" onclick="myFunctiom()">part of the lesson</button>
+<script>
+let click=0;
+</script>
+<script>
+function myFunctiom(){
+click=click+1;
+if (click==1){
+document.getElementById("j").innerHTML="Huh? what about strange pages?";
+} else if (click==2){
+document.getElementById("j").innerHTML="I already told you! I know nothing!";
+}else if (click==3){
+document.getElementById("j").innerHTML="OW THAT HURTS";
+}else{
+document.getElementById("j").innerHTML="I'M NOT TELLING YOU ANYTHING ELSE YOU JERK";
+}
+}
+</script>
+<button onclick= "yeet()">Button of death</button>
+<script>
+function yeet(){
+alert("Successfully downloaded 735 viruses (this is a joke)");
+}
+</script>
+
+<p>this button is for your safety, do not press this button</p>
+
+<br /><br />
+<button onclick="toggle(this);">PLEASE DON'T DOUBLE CLICK</button>
+<img id="myimg" src="img/blurred.jpeg" width="900" height="500" hidden>
+<script>
+  let toggle = button => {
+    let element = document.getElementById("myimg");
+    let hidden = element.getAttribute("hidden");
+    
+    if (hidden) {
+       element.removeAttribute("hidden");
+       img.innerText = "Hide image";
+    } else {
+       element.setAttribute("hidden", "hidden");
+       img.innerText = "Show image";
+    }
+  }
+</script>
+
+
+
+<br>
+<a href="n1.html">to see my actual first page, click here</a>
+<br>
+<a href="experimental.html">reset page</a>
+</body>
+
+
+</html>
